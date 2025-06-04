@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Salvadoran Recipes</title>
+  <link rel="shortcut icon" href="../imagenes/logo.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../Css/estilos.css">
+  <link rel="stylesheet" type="text/css" href="../Css/style.css" media="screen"> 
+</head>
+<header>
+   <h1>Recetas El Salvador</h1>
+  <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
+  <div class="container-fluid">
+    <img src="../imagenes/logo.png" alt="Logo" style="width: 80px; height: auto; margin-top: -15px; margin-bottom: -15px;">
+    <a class="navbar-brand" href="../Index.html">Inicio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../about_us/acercadeSV.html">Acerca de El Salvador</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about_us/miniblog.html">Mini-Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about_us/contactanos.html">Contactanos</a>
+        </li>
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+<body>
+
+<div id="flipbook">
+  <div class="page"> <img src="../imagenes/final.jpg" alt="img" class="flitbook-img"></div>
+  <div class="page"><img src="../imagenes/sopa de frijoles.jpg" alt="img" class="flitbook-img" align="top"></div>
+  <div class="page"> <img src="../imagenes/pag.jpg" alt="img" class="flitbook-img"> <font  ><p>Sopa de frijoles<br></font>
+    2 libras de frijoles de seda <br>
+    3 libras de carne con hueso de res <br>
+    1 guisquil ( chayote) <br>
+    1 pipián <br>
+    2cd de cilantro picado <br> 
+    1 cdta de hierva buena <br>
+    2 consomé de res <br>
+    4 huevos <br>
+
+</p></div>
+<div class="page"> <img src="../imagenes/pag.jpg" alt="img" class="flitbook-img">
+    <p>
+    Ponga a coser los frijoles con suficiente agua <br> 
+    cuando lleguen al punto que ya están ablandando (aproximadamente 1 hora) <br> 
+    agregué la carne previamente lavada y cortada en trocitos a su gusto. <br>
+    Luego cuando ya este ablandando la carne agregué los demás ingrediente <br>
+    lavar muy bien los huevos para luego agregarlos enteros con cascarón a la sopa <br>
+    agregar el consomé de res, y déjelo que se cosine por unos 10 minutos mas. <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+  
+  </p></div>
+ <div class="page"><img src="../imagenes/pag.jpg" alt="img" class="flitbook-img"></div>
+  <div class="page"> <img src="../imagenes/final.jpg" alt="img" class="flitbook-img"></div>
+
+</div>
+<footer>
+  <h1>Sopa de Frijoles</h1>
+  <nav>
+        <ul>
+           <li><a href="../Zonas/ZonaOccidental.html">Regresar</a></li>
+            <li><a href="../recectas_occidente/Platanos_con_crema.html">Anterior</a></li>
+            <li><a href="../recectas_occidente/Atol_chuco.html">Siguiente</a></li>
+          
+        </ul>
+    </nav>
+</footer>
+
+<!-- Librerias neesarias primero jquery para que funcione -->
+<script src="../JavaScript/Libreria/jQuery.js"></script>
+<script src="../JavaScript/Libreria/turn.js"></script>
+
+
+<script>
+  $("#flipbook").turn({//tamaño del libro
+    width: 900,
+    height: 600,
+    elevation: 100,       // Efecto de profundidad en las páginas
+    gradients: true,     // Degradados para el efecto de curvatura
+  });
+</script>
+
+</body>
+</html>
